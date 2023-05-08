@@ -1,0 +1,261 @@
+* {
+    margin: 0px 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.05rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+#container {
+    background-color: rgb(126, 150, 142);
+    text-align: center;
+}
+
+#container artticle p {
+    text-align: center;
+}
+
+.contenu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#searchbar {
+    position: relative;
+    width: 1040px;
+    height: auto;
+    align-items: center;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.formulaire .champ {
+    width: 350px;
+    height: 35px;
+}
+
+.formulaire .bouton {
+    background-image: url(images/searchbar_button.png);
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 35px;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    list-style-type: none;
+    justify-content: center;
+}
+
+.menu a {
+    display: block;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid rgb(7, 53, 95);
+    border-radius: 4px;
+    margin: 0.5rem;
+    padding: 0.4rem;
+    transition: all 1s;
+}
+
+.menu a:hover {
+    background-color: rgb(13, 94, 100);
+    border-color: thistle;
+    color: rgb(49, 40, 31);
+}
+
+#header {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+
+.slogan {
+    color: rgb(39, 39, 44);
+    text-align: right;
+    padding: 2px;
+    margin: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.hr0 {
+    color: #333;
+    height: 5px;
+    border-bottom: 7px;
+    border-top: 3px double #333;
+    overflow: visible;
+    text-align: center;
+}
+
+.fond_image {
+    background: url("../images/architecte-interieur-salon-maison-contemporaine.webp") center;
+    height: 100%;
+    background-size: cover;
+    border: 2px solid darkgray;
+    color: #000;
+    text-shadow: 1px 1px 0 #fff;
+    min-height: 99em;
+    width: 100%;
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+    width: 80%;
+    height: 80%;
+}
+
+.para1,
+.para2,
+.para3,
+.para4 {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(238, 243, 245);
+    margin: 10px 0;
+}
+
+.button01,
+.button02,
+.button03,
+.button04 {
+    border: 1px solid;
+    border-radius: 1px;
+    text-decoration: none;
+    border-color: thistle;
+    background-color: rgb(243, 244, 247);
+}
+
+.img0 {
+    width: 100%;
+    height: 100%;
+}
+
+.contenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 60px 0;
+}
+
+.container p {
+    padding: 20px
+}
+
+
+/***********footer****************************************/
+
+#footer {
+    background-color: #333;
+    display: block;
+    justify-content: space-between;
+    flex: wrap;
+    padding: 20px;
+}
+
+.reso {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+
+/*************tableau pour mail******debut************/
+
+form.form {
+    display: table;
+}
+
+div.form {
+    display: table-row;
+}
+
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+
+/*************tableau pour mail******fin************/
+
+
+/************************responsive***********************/
+
+@media screen and (max-width: 480px) {
+    .menu {
+        flex-direction: column;
+    }
+    #menu_header {
+        width: 100%;
+    }
+    .menu ul {
+        width: 100%;
+    }
+    .menu a {
+        width: 100%;
+    }
+    .item {
+        height: 50px;
+    }
+    #searchbar {
+        width: 100%;
+    }
+    .fond_image {
+        width: 100vw;
+    }
+    .container {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .reso {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .reso p {
+        color: #c2c2c2
+    }
+    .reso a {
+        text-decoration: none;
+        color: #c2c2c2;
+    }
+}
+
+
+}
+@media screen and (max-width: 1024px) {
+    .menu_header {
+        width: 100%;
+    }
+}
